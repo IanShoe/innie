@@ -1,0 +1,28 @@
+{
+  "name": "innie",
+  "version": "0.0.0",
+  "description": "CSV in",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IanShoe/innie.git"
+  },
+  "keywords": [
+    "CSV",
+    "in"
+  ],
+  "author": "IanShoe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IanShoe/innie/issues"
+  },
+  "homepage": "https://github.com/IanShoe/innie",
+  "dependencies": {
+    "csv-parse": "^1.1.2",
+    "mware": "0.0.3",
+    "stream-transform": "^0.1.1"
+  }
+}
