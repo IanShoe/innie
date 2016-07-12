@@ -17,7 +17,6 @@ module.exports = function (config) {
   return {
     registerMiddleware: mware,
     run: function () {
-      input.on('end', config.end);
       input
         .pipe(parse({
           columns: true
@@ -28,7 +27,8 @@ module.exports = function (config) {
             cb(err, memo);
           });
         }))
-        .pipe(config.writer);
+        .pipe(config.writer)
+        .on('end', config.end);
     }
   };
 };
